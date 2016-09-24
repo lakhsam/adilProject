@@ -13,7 +13,7 @@ import org.springframework.context.ApplicationContextAware;
  * @author adilb_000
  *
  */
-public class Triangle implements InitializingBean,DisposableBean{
+public class Triangle implements Shape{
 	
 	//private List<Point> points;
 	
@@ -84,6 +84,9 @@ public class Triangle implements InitializingBean,DisposableBean{
 			System.out.println("Point B=("+ point.getX()+","+ point.getY()+")");
 		}*/
 		//System.out.println(getType()+" "+getHeight()+" Triangle draw");
+		
+		System.out.println("Drawing Traingle");
+		
 		System.out.println("Point A=("+ getPointA().getX()+","+ getPointA().getY()+")");
 
 		System.out.println("Point B=("+ getPointB().getX()+","+ getPointB().getY()+")");
@@ -93,7 +96,7 @@ public class Triangle implements InitializingBean,DisposableBean{
 
 
 
-
+/*
 @Override
 public void afterPropertiesSet() throws Exception {
 	// TODO Auto-generated method stub
@@ -110,14 +113,5 @@ public void destroy() throws Exception {
 
 	
 }
-
-public void myInit()
-{
-  System.out.println("My init method is called for Triangle");
-}
-public void cleanUp()
-{
-  System.out.println("cleanUp method is called for Triangle");
-}
-
+*/
 }
